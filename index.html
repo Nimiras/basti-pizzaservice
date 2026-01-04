@@ -1,3 +1,162 @@
-<a href="speisekarte.pdf" download>
-Speisekarte herunterladen
-</a>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basti-Pizzaservice</title>
+
+    <style>
+        :root {
+            --primary-color: #1b4332;
+            --secondary-color: #333;
+            --background-color: #f8f8f8;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: var(--background-color);
+            color: var(--secondary-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        section {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem 1rem;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .info-box {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        .menu-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.2rem;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .menu-link:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: #222;
+            color: #ccc;
+            padding: 2rem 1rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #ccc;
+        }
+
+        .footer-content {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .opening-hours {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.6rem 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .opening-hours .day {
+            font-weight: bold;
+        }
+
+        .opening-hours .time {
+            text-align: right;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Basti-Pizzaservice</h1>
+    <p>Frisch. Lecker. Schnell.</p>
+</header>
+
+<section>
+    <div class="info-box">
+        <h2>Öffnungszeiten</h2>
+
+        <div class="opening-hours">
+            <div class="day">Montag</div>
+            <div class="time">16:00 – 21:30</div>
+
+            <div class="day">Dienstag</div>
+            <div class="time">Geschlossen</div>
+
+            <div class="day">Mittwoch & Donnerstag</div>
+            <div class="time">
+                11:00 – 14:30<br>
+                16:00 – 21:30
+            </div>
+
+            <div class="day">Freitag</div>
+            <div class="time">16:00 – 22:00</div>
+
+            <div class="day">Samstag & Sonntag</div>
+            <div class="time">15:00 – 22:00</div>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <h2>Unsere Speisekarte</h2>
+        <p>
+            Entdecke unsere Pizzen, Pasta & mehr.
+        </p>
+        <!-- Speisekarte liegt im Root-Verzeichnis -->
+        <a class="menu-link" href="speisekarte.pdf" download>
+            Speisekarte herunterladen (PDF)
+        </a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h2>Impressum</h2>
+        <!-- Impressumstext hier anpassen -->
+        <p>
+            Basti-Pizzaservice<br>
+            Catenhorner Straße 2<br>
+            48432 Rheine<br><br>
+
+            Telefon: 01234 / 567890<br>
+            E-Mail: info@basti-pizzaservice.de
+        </p>
+
+        <p>
+            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:<br>
+            Max Mustermann
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>
